@@ -34,10 +34,39 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <nav
+      class="floating-nav m-5 navbar navbar-expand-lg bg-dark justify-content-center shadow"
+    >
+      <ul class="nav navbar-nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#section-1">Section 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#section-2">Section 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#section-3">Section 3</a>
+        </li>
+      </ul>
+    </nav>
+
     <div
-      class="container-fluid d-flex align-items-center justify-content-center h-100"
+      class="container-fluid d-flex align-items-center justify-content-center"
+      id="hero-container"
     >
       <span id="hero-text" class="title-text">Jack Schwarz</span>
+    </div>
+    <div
+      class="container-fluid d-flex align-items-center justify-content-center h-100 bg-primary"
+      id="section-2"
+    >
+      <span id="hero-text" class="title-text">Section 2</span>
+    </div>
+    <div
+      class="container-fluid d-flex align-items-center justify-content-center h-100 bg-success"
+      id="section-3"
+    >
+      <span id="hero-text" class="title-text">Section 3</span>
     </div>
   </body>
 </html>

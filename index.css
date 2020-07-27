@@ -2,6 +2,8 @@ html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: #f8f8ff;
+    /* overflow: hidden; */
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6, .title-text {
@@ -15,4 +17,35 @@ header {
 #hero-text {
     font-size: 8rem;
     font-weight: bold;
+}
+
+#hero-container {
+    height: 90%;
+    background-image: url("hero-img.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.floating-nav {
+    background-color: grey;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transition: all 0.4s;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.nav-item {
+    padding: .5rem 1rem;
+}
+
+.nav-item:hover {
+    transition: all 0.4s;
+    background-color: grey;
 }
