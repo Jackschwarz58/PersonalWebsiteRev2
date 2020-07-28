@@ -14,16 +14,17 @@
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
+
     <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <link
       rel="stylesheet"
@@ -33,46 +34,93 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inconsolata"
+    />
+
     <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
   </head>
   <body>
-    <nav
-      class="floating-nav m-5 navbar navbar-expand-lg bg-dark justify-content-center shadow"
-    >
-      <ul class="nav navbar-nav flex-column">
-        <li class="nav-item">
-          <a class="nav-link text-light" href="#section-1">Section 1</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="#section-2">Section 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="#section-3">Section 3</a>
-        </li>
-      </ul>
-    </nav>
-
     <div
       class="container-fluid d-flex align-items-center justify-content-center flex-column"
       id="hero-container"
     >
-      <span id="hero-text" class="title-text">Jack Schwarz</span>
+      <span class="title-text hero-text">Jack Schwarz</span>
 
-      <span id="hero-subtitle" class="title-text"
-        >Student Developer</span
-      >
+      <span class="title-text hero-subtitle">Student Developer</span>
+
+      <a href="#about"><i class="fa fa-angle-down scroll-down-chevron"></i></a>
     </div>
 
-      <div
-        class="container -flex align-items-center justify-content-center h-100 bg-primary"
-        id="section-2"
+    <div class="section-wrapper container-fluid h-100">
+      <nav
+        class="floating-nav m-4 navbar navbar-expand-sm justify-content-center shadow"
+        id="nav-menu"
       >
-        <span id="hero-text" class="title-text">Section 2</span>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav flex-column">
+            <li class="nav-item py-3">
+              <p class="link-container">
+                <a class="nav-link" href="#about">About</a>
+              </p>
+            </li>
+            <li class="nav-item py-3">
+              <p class="link-container">
+                <a class="nav-link" href="#projects">Projects</a>
+              </p>
+            </li>
+            <li class="nav-item py-3">
+              <p class="link-container">
+                <a class="nav-link" href="#skills">Skills</a>
+              </p>
+            </li>
+            <li class="nav-item py-3">
+              <p class="link-container">
+                <a class="nav-link" href="#experience">Experience</a>
+              </p>
+            </li>
+            <li class="nav-item py-3">
+              <p class="link-container">
+                <a class="nav-link" href="#contact">Contact</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container pt-5 h-100" id="about">
+        <span class="title-text hero-text">About/Education</span>
       </div>
+
       <div
-        class="container d-flex align-items-center justify-content-center h-100 bg-success"
-        id="section-3"
+        class="container d-flex align-items-center justify-content-center h-100"
+        id="projects"
       >
-        <span id="hero-text" class="title-text">Section 3</span>
+        <span class="title-text hero-text">Projects</span>
+      </div>
+
+      <div
+        class="container d-flex align-items-center justify-content-center h-100"
+        id="skills"
+      >
+        <span class="title-text hero-text">Skills</span>
+      </div>
+
+      <div
+        class="container d-flex align-items-center justify-content-center h-100"
+        id="experience"
+      >
+        <span class="title-text hero-text">Experience</span>
+      </div>
+
+      <div
+        class="container d-flex align-items-center justify-content-center h-100"
+        id="contact"
+      >
+        <span class="title-text hero-text">Contact</span>
+      </div>
+    </div>
   </body>
 </html>
