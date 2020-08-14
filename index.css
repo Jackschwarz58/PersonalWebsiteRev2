@@ -105,10 +105,18 @@ header {
   color: #383838;
 }
 
-.subheading-title {
+.subheading {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
+  font-weight: 400;
+}
+
+.subheading-detail {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
   font-weight: 300;
+  display: block;
+  width: 100%;
 }
 
 .fit-image {
@@ -118,6 +126,12 @@ header {
 .social-icon {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
+  color: #383838;
+  transition: all 0.4s;
+}
+
+.social-icon-inline {
+  font-size: 2.5rem;
   color: #383838;
   transition: all 0.4s;
 }
@@ -161,4 +175,38 @@ header {
   padding-right: 0;
   margin-left: 0;
   margin-right: 0;
+}
+
+li {
+  margin: 10px 0px;
+  font-weight: 300;
+}
+
+.github-inline {
+  float: right;
+  margin-right: 4.1rem;
+  opacity: 70%
+}
+
+.thin {
+  font-weight: 300;
+}
+
+.icon-label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  color: #383838;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-item:hover {
+  color: rgb(163, 38, 38);
+  font-style: normal;
+  text-decoration: none;
 }
