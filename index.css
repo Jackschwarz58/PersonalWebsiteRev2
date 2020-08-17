@@ -210,3 +210,7 @@ li {
   font-style: normal;
   text-decoration: none;
 }
+
+.class-tag {
+  font-family: "Roboto", sans-serif;
+}
